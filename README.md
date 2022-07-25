@@ -1,5 +1,5 @@
-# Лендинг веб-сайта Mobile Banking
+# Лендинг веб-сайта eCommerce
 
 Ссылки
-- [Макет в figma](https://www.figma.com/community/file/1042383218812257875)
-- [Пример живой страницы](https://dimoncss.ru/myworks/mobile-banking/)
+- [Макет в figma](https://www.figma.com/community/file/1127356513790471352)
+- [Пример живой страницы](https://dimoncss.ru/myworks/ecommerce/)

@@ -1,0 +1,18 @@
+header(class="header")
+    div(class="container header__container")
+        div(class="layout header__layout")
+            a(class="header__logo logo-header" href="index.html")
+                svg(class="svg logo-header__icon" width="24" viewBox="0 0 24 24")
+                    use(href="assets/img/defs.svg#logo")
+                span(class="logo-header__title") Toutem
+            nav(class="nav header__nav nav-header" id="main-nav")
+                ul(class="nav__menu menu-nav nav-header__menu menu-nav-header" id="main-menu")
+                    each item in menuList
+                        li(class="menu-nav__item menu-nav-header__item")
+                            a(class="menu-nav__link menu-nav-header__link" href=item.href)= item.innerHTML
+                svg(class="svg nav-header__bag" width="15" viewBox="0 0 15 17")
+                    use(href="assets/img/defs.svg#bag")
+                svg(class="svg nav-header__search" width="16" viewBox="0 0 16 17")
+                    use(href="assets/img/defs.svg#search")
+                button(class="hamburger" id="trigger-menu" aria-expanded="false" aria-controls="main-menu" aria-label="Main menu" type="button")
+                    span(class="hamburger__item")
