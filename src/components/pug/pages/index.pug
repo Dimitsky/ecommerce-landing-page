@@ -21,8 +21,35 @@ block variables
                 innerHTML: 'CONTACT', 
             }, 
         ];
+        let aboutList = [
+            {
+                svgViewBox: '0 0 47 46', 
+                svgWidth: 47, 
+                svgId: 'oils', 
+                title: 'Essential oils', 
+            }, 
+            {
+                svgViewBox: '0 0 50 51', 
+                svgWidth: 50, 
+                svgId: 'cosmetics', 
+                title: 'Natural cosmetics', 
+            }, 
+            {
+                svgViewBox: '0 0 50 53', 
+                svgWidth: 50, 
+                svgId: 'diffusers', 
+                title: 'Diffusers', 
+            }, 
+            {
+                svgViewBox: '0 0 50 53', 
+                svgWidth: 50, 
+                svgId: 'aromatherapy', 
+                title: 'Aromatherapy', 
+            }, 
+        ];
 
 block header
     include ../../sections/header/header.pug
 block main
     include ../../sections/hero/hero.pug
+    include ../../sections/about/about.pug

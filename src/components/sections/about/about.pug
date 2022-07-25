@@ -1,0 +1,10 @@
+section(class="about")
+    div(class="container about__container")
+        div(class="layout about__layout")
+            ul(class="list-reset list-reset about__list list-about")
+                each item in aboutList
+                    li(class="list-about__item")
+                        a(class="list-about__body" href=item.href)
+                            svg(class="svg list-about__icon" width=item.svgWidth viewBox=item.svgViewBox)
+                                use(href=`assets/img/defs.svg#${item.svgId}`)
+                            h3(class="h h--3 list-about__h")= item.title
