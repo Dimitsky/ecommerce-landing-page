@@ -1,0 +1,33 @@
+section(class="trends")
+    div(class="container trends__container")
+        div(class="layout trends__layout")
+            div(class="trends__wrap")
+                h2(class="h h--2 trends__h") Trends
+                a(class="btn trends__btn" href="#") SHOP ALL
+            div(class="swiper trends__swiper swiper-trends")
+                div(class="swiper-wrapper swiper-trends__wrapper")
+                    each item in trendsList
+                        div(class="swiper-slide swiper-trends__slide slide-swiper-trends")
+                            a(class="card slide-swiper-trends__body" href=item.href)
+                                div(class="card__img-wrap slide-swiper-trends__img-wrap")
+                                    picture()
+                                        source(
+                                            type="image/webp" 
+                                            srcset=`assets/img/trends/${item.imgName}@2x.webp 2x, 
+                                                    assets/img/trends/${item.imgName}@1x.webp 1x`
+                                        )
+                                        source(
+                                            type="image/jpg" 
+                                            srcset=`assets/img/trends/${item.imgName}@2x.jpg 2x, 
+                                                    assets/img/trends/${item.imgName}@1x.jpg 1x`
+                                        )
+                                        img(class="card__img slide-swiper-trends__img" src=`assets/img/trends/${item.imgName}@1x.jpg`, alt=item.imgAlt style="max-width: 100%")
+                                div(class="card__info info-card slide-swiper-trends__desc desc-slide-swiper-trends")
+                                    div(class="info-card__wrap desc-slide-swiper-trends__wrap")
+                                        div(class="info-card__inner")
+                                            h3(class="info-card__title desc-slide-swiper-trends__h")= item.title
+                                            span(class="info-card__price")= item.price
+                                        p(class="info-card__desc desc-slide-swiper-trends__desc")= item.desc
+                                    svg(class="info-card__add-cart desc-slide-swiper-trends__add-cart" width="45" ViewBox="0 0 45 50")
+                                        use(href="assets/img/defs.svg#add-cart")
+                div(class="swiper-pagination swiper-trends__pagination pagination-swiper-trends")
