@@ -1,0 +1,23 @@
+section(class="blog")
+    div(class="container blog__container")
+        div(class="layout blog__layout")
+            h2(class="h h--2 blog__h") BLOG
+            ul(class="list-reset blog__list list-blog")
+                each item in blogList
+                    li(class="list-blog__item")
+                        article(class="list-blog__body body-list-blog")
+                            div(class="body-list-blog__img-wrap")
+                                picture()
+                                    source(
+                                        type="image/webp" 
+                                        srcset=`assets/img/blog/${item.imgName}@2x.webp 2x, 
+                                                assets/img/blog/${item.imgName}@1x.webp 1x`
+                                    )
+                                    source(
+                                        type="image/jpg" 
+                                        srcset=`assets/img/blog/${item.imgName}@2x.jpg 2x, 
+                                                assets/img/blog/${item.imgName}@1x.jpg 1x`
+                                    )
+                                    img(class="body-list-blog__img" src="assets/img/blog/${item.imgName}@1x.jpg", alt=item.imgAlt style="max-width: 100%")
+                            a(class="a h h--3 body-list-blog__h" href=item.href)= item.title
+                            p(class="p body-list-blog__p")= item.desc
