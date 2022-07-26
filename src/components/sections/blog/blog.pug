@@ -19,5 +19,5 @@ section(class="blog")
                                                 assets/img/blog/${item.imgName}@1x.jpg 1x`
                                     )
                                     img(class="body-list-blog__img" src="assets/img/blog/${item.imgName}@1x.jpg", alt=item.imgAlt style="max-width: 100%")
-                            a(class="a h h--3 body-list-blog__h" href=item.href)= item.title
-                            p(class="p body-list-blog__p")= item.desc
+                            h(class="h h--3 body-list-blog__h")= item.title
+                            a(class="a p body-list-blog__p" href=item.href)= item.desc
