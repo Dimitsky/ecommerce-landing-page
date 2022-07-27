@@ -1,0 +1,22 @@
+.hero {
+    background: no-repeat center center / 50% url('../img/hero/bg-2.webp'), 
+                no-repeat center center / 50% url('../img/hero/bg-1.svg');
+
+    &__layout {
+        margin-bottom: 57px;
+    }
+
+    &__h {
+        max-width: 55%;
+        margin: 0 auto 30px;
+        color: var(--green);
+        font: 600 2.5rem/0.9 "SF Rounded", sans-serif;
+        text-align: center;
+    }
+
+    &__p {
+        color: var(--grey-400);
+        font: 600 0.75rem/1.4 "SF Pro Display", sans-serif;
+        text-align: center;
+    }
+}

@@ -33,12 +33,21 @@
   font-style: normal;
   font-weight: 900;
 }
+@font-face {
+  font-family: "SF Rounded";
+  src: url("../fonts/SFRounded-Ultralight.woff2") format("woff2"), url("../fonts/SFRounded-Ultralight.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
 :root {
   box-sizing: border-box;
   font: 400 16px/1.5 "SF Pro Display", sans-serif;
   --color-text-main: #1F2937;
   --grey-100: #F3F4F6;
+  --grey-400: #9CA3AF;
   --grey-800: #1F2937;
+  --green: #5FD788;
 }
 
 *,
@@ -54,7 +63,8 @@
   list-style: none;
 }
 
-.h {
+.h,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -157,6 +167,25 @@
 }
 [aria-expanded=true] .hamburger__item::before {
   transform: rotate(-45deg);
+}
+
+.hero {
+  background: no-repeat center center/50% url("../img/hero/bg-2.webp"), no-repeat center center/50% url("../img/hero/bg-1.svg");
+}
+.hero__layout {
+  margin-bottom: 57px;
+}
+.hero__h {
+  max-width: 55%;
+  margin: 0 auto 30px;
+  color: var(--green);
+  font: 600 2.5rem/0.9 "SF Rounded", sans-serif;
+  text-align: center;
+}
+.hero__p {
+  color: var(--grey-400);
+  font: 600 0.75rem/1.4 "SF Pro Display", sans-serif;
+  text-align: center;
 }
 
 .a {

@@ -10,7 +10,9 @@
 
     --color-text-main: #1F2937;
     --grey-100: #F3F4F6;
+    --grey-400: #9CA3AF;
     --grey-800: #1F2937;
+    --green: #5FD788;
 }
 
 *, 
@@ -26,7 +28,8 @@
     list-style: none;
 }
 
-.h {
+.h, 
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -43,6 +46,7 @@
 // sections
 
 @import '../sections/header/header.scss';
+@import '../sections/hero/hero.scss';
 
 // ui
 

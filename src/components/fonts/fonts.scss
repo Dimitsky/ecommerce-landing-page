@@ -42,3 +42,12 @@
     font-style: normal;
     font-weight: 900;
 }
+
+@font-face {
+    font-family: 'SF Rounded';
+    src: url('../fonts/SFRounded-Ultralight.woff2') format('woff2'), 
+         url('../fonts/SFRounded-Ultralight.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+}
