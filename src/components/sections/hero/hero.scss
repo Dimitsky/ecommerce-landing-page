@@ -1,9 +1,10 @@
 .hero {
-    background: no-repeat center center / 50% url('../img/hero/bg-2.webp'), 
-                no-repeat center center / 50% url('../img/hero/bg-1.svg');
+    background: no-repeat top 30% center/40% url("../img/hero/bg-2.webp"), 
+                no-repeat top 19% center/60% url("../img/hero/bg-1.svg");
 
     &__layout {
         margin-bottom: 57px;
+        padding-top: 270px;
     }
 
     &__h {

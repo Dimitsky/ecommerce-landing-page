@@ -9,6 +9,7 @@
     font: 400 16px/1.5 'SF Pro Display', sans-serif;
 
     --color-text-main: #1F2937;
+    --grey-50: #F9FAFB;
     --grey-100: #F3F4F6;
     --grey-400: #9CA3AF;
     --grey-800: #1F2937;
@@ -47,6 +48,7 @@ p {
 
 @import '../sections/header/header.scss';
 @import '../sections/hero/hero.scss';
+@import '../sections/about/about.scss';
 
 // ui
 

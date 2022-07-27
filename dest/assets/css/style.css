@@ -44,6 +44,7 @@
   box-sizing: border-box;
   font: 400 16px/1.5 "SF Pro Display", sans-serif;
   --color-text-main: #1F2937;
+  --grey-50: #F9FAFB;
   --grey-100: #F3F4F6;
   --grey-400: #9CA3AF;
   --grey-800: #1F2937;
@@ -170,10 +171,11 @@ p {
 }
 
 .hero {
-  background: no-repeat center center/50% url("../img/hero/bg-2.webp"), no-repeat center center/50% url("../img/hero/bg-1.svg");
+  background: no-repeat top 30% center/40% url("../img/hero/bg-2.webp"), no-repeat top 19% center/60% url("../img/hero/bg-1.svg");
 }
 .hero__layout {
   margin-bottom: 57px;
+  padding-top: 270px;
 }
 .hero__h {
   max-width: 55%;
@@ -186,6 +188,61 @@ p {
   color: var(--grey-400);
   font: 600 0.75rem/1.4 "SF Pro Display", sans-serif;
   text-align: center;
+}
+
+.about__layout {
+  margin-bottom: 52px;
+}
+.about__list {
+  max-width: 40%;
+  margin: auto;
+}
+
+.list-about__item {
+  position: relative;
+  box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+.list-about__item:not(:last-child) {
+  margin-bottom: 21px;
+}
+.list-about__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 26px;
+  text-decoration: none;
+  background: var(--grey-50);
+  transition: background-color 300ms;
+}
+.list-about__body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.list-about__body:hover {
+  background-color: var(--green);
+}
+.list-about__body:hover .list-about__icon {
+  fill: #fff;
+}
+.list-about__body:hover .list-about__h {
+  color: #fff;
+}
+.list-about__icon {
+  margin-bottom: 10px;
+  fill: var(--green);
+  transition: fill 300ms;
+}
+.list-about__h {
+  color: var(--green);
+  font: 600 0.875rem/1.4 "SF Pro Display", sans-serif;
+  transition: color 300ms;
 }
 
 .a {
