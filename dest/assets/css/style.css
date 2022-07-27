@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Black.woff2") format("woff2"), url("../fonts/SFProDisplay-Black.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+:root {
+  box-sizing: border-box;
+  font: 400 16px/1.5 "SF Pro Display", sans-serif;
+  --color-text-main: #1F2937;
+  --grey-100: #F3F4F6;
+  --grey-800: #1F2937;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.h {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.svg {
+  display: block;
+}
+
+.container {
+  margin: auto;
+  padding: 0 35px;
+}
+
+.header {
+  min-height: 70px;
+}
+.header__layout {
+  padding: 25px 0;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.logo-header__icon {
+  margin-right: 1em;
+}
+
+.menu-nav-header__list {
+  margin-bottom: 1.5em;
+}
+.menu-nav-header__item:not(:last-child) {
+  margin-bottom: 0.7em;
+}
+.menu-nav-header__icon-wrap {
+  display: flex;
+}
+.menu-nav-header__bag {
+  display: inline-block;
+  min-height: 20px;
+  margin-right: 12px;
+}
+.menu-nav-header__search {
+  border: none;
+  border-radius: 2em;
+  padding: 0.4em 2em 0.4em 0.375em;
+  width: 100%;
+  max-width: 0;
+  height: 2em;
+  font-size: 0.625rem;
+  background: no-repeat center right 0.6em/1.6em url("../img/search.svg") transparent;
+  transition: background-color 500ms, max-width 500ms, background-size 500ms;
+  overflow: hidden;
+}
+.menu-nav-header__search:focus {
+  height: 1.6em;
+  max-width: 212px;
+  background-size: 0.8em;
+  background-color: var(--grey-100);
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  background: none;
+}
+.hamburger__item, .hamburger__item::after, .hamburger__item::before {
+  border-radius: 2px;
+  height: 2px;
+  width: 26px;
+  background: #000;
+}
+.hamburger__item {
+  position: relative;
+}
+[aria-expanded=true] .hamburger__item {
+  background: transparent;
+}
+.hamburger__item::after, .hamburger__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.hamburger__item::after {
+  transform: translateY(10px);
+}
+[aria-expanded=true] .hamburger__item::after {
+  transform: rotate(45deg);
+}
+.hamburger__item::before {
+  transform: translateY(-10px);
+}
+[aria-expanded=true] .hamburger__item::before {
+  transform: rotate(-45deg);
+}
+
+.a {
+  color: var(--grey-800);
+  text-decoration: none;
+}

@@ -1,0 +1,49 @@
+// fonts
+
+@import '../fonts/fonts.scss';
+
+// root
+
+:root {
+    box-sizing: border-box;
+    font: 400 16px/1.5 'SF Pro Display', sans-serif;
+
+    --color-text-main: #1F2937;
+    --grey-100: #F3F4F6;
+    --grey-800: #1F2937;
+}
+
+*, 
+::after, 
+::before {
+    box-sizing: inherit;
+}
+
+.list-reset {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.h {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.svg {
+    display: block;
+}
+
+.container {
+    margin: auto;
+    padding: 0 35px
+}
+
+// sections
+
+@import '../sections/header/header.scss';
+
+// ui
+
+@import '../ui/a/a.scss';

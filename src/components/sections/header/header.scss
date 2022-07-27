@@ -1,0 +1,111 @@
+.header {
+    min-height: 70px;
+
+    &__layout {
+        padding: 25px 0;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5em;
+    }
+}
+
+.logo-header {
+    &__icon {
+        margin-right: 1em;
+    }
+}
+
+.menu-nav-header {
+    &__list {
+        margin-bottom: 1.5em;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: .7em;
+    }
+
+    &__icon-wrap {
+        display: flex;
+    }
+
+    &__bag {
+        display: inline-block;
+        min-height: 20px;
+        margin-right: 12px;
+    }
+
+    &__search {
+        border: none;
+        border-radius: 2em;
+        padding: 0.4em 2em 0.4em 0.375em;
+        width: 100%;
+        max-width: 0;
+        height: 2em;
+        font-size: 0.625rem;
+        background: no-repeat center right 0.6em/1.6em url("../img/search.svg") transparent;
+        transition: background-color 500ms, max-width 500ms, background-size 500ms;
+        overflow: hidden;
+        
+        &:focus {
+            height: 1.6em;
+            max-width: 212px;
+            background-size: 0.8em;
+            background-color: var(--grey-100);
+        }
+    }
+}
+
+.hamburger {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background: none;
+
+    &__item, 
+    &__item::after, 
+    &__item::before {
+        border-radius: 2px;
+        height: 2px;
+        width: 26px;
+        background: #000;
+    }
+
+    &__item {
+        position: relative;
+
+        [aria-expanded=true] & {
+            background: transparent;
+        }
+
+        &::after, 
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+        }
+
+        &::after {
+            transform: translateY(10px);
+
+            [aria-expanded=true] & {
+                transform: rotate(45deg);
+            }
+        }
+
+        &::before {
+            transform: translateY(-10px);
+            [aria-expanded=true] & {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
