@@ -40,6 +40,13 @@
   font-style: normal;
   font-weight: 600;
 }
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
 :root {
   box-sizing: border-box;
   font: 400 16px/1.5 "SF Pro Display", sans-serif;
@@ -245,7 +252,48 @@ p {
   transition: color 300ms;
 }
 
+.explore {
+  background: no-repeat top 10% right 43%/50% url("../img/explore/bg-2.webp"), no-repeat top 10% center/50% url("../img/explore/bg-1.svg");
+}
+.explore__layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 37px;
+  padding-top: 270px;
+}
+.explore__h {
+  margin-bottom: 20px;
+  color: var(--green);
+  font: 600 1.25rem/1.1 "SF Rounded", sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.explore__p {
+  margin-bottom: 20px;
+  color: var(--grey-400);
+  font: 600 0.75rem/1.4 "SF Pro Display", sans-serif;
+  text-align: center;
+}
+.explore__btn {
+  width: 89.78%;
+}
+
 .a {
   color: var(--grey-800);
   text-decoration: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5em;
+  display: inline-block;
+  padding: 0.75em;
+  color: #fff;
+  font: 700 1rem/1 "Quicksand", sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--green);
 }

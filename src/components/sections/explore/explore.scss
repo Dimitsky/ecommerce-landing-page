@@ -1,0 +1,31 @@
+.explore {
+    background: no-repeat top 10% right 43%/50% url("../img/explore/bg-2.webp"), 
+                no-repeat top 10% center/50% url("../img/explore/bg-1.svg");
+
+    &__layout {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 37px;
+        padding-top: 270px;
+    }
+
+    &__h {
+        margin-bottom: 20px;
+        color: var(--green);
+        font: 600 1.25rem/1.1 "SF Rounded", sans-serif;
+        letter-spacing: 0.01em;
+        text-align: center;
+    }
+
+    &__p {
+        margin-bottom: 20px;
+        color: var(--grey-400);
+        font: 600 0.75rem/1.4 "SF Pro Display", sans-serif;
+        text-align: center;
+    }
+
+    &__btn {
+        width: 89.78%;
+    }
+}
