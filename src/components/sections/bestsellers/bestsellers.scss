@@ -1,6 +1,6 @@
 .bestsellers {
     &__layout {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     
     &__wrap {
@@ -23,10 +23,15 @@
         width: 89.78%;
         margin: auto;
     }
+
+    &__swiper {
+        margin: auto;
+        max-width: 300px;
+    }
 }
 
 .swiper-bestsellers {
     &__slide {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }

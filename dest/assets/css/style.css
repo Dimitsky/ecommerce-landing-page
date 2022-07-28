@@ -116,6 +116,7 @@ p {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   display: block;
+  height: 310px;
   box-shadow: 3px 3px 10px -3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
@@ -364,7 +365,7 @@ p {
 }
 
 .bestsellers__layout {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .bestsellers__wrap {
   display: flex;
@@ -384,9 +385,13 @@ p {
   width: 89.78%;
   margin: auto;
 }
+.bestsellers__swiper {
+  margin: auto;
+  max-width: 300px;
+}
 
 .swiper-bestsellers__slide {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .soaps__container {
@@ -414,4 +419,35 @@ p {
 }
 .soaps__btn {
   width: 61.28%;
+}
+
+.trends {
+  background: no-repeat top center url("../img/trends/bg-1.svg");
+}
+.trends__layout {
+  padding-top: 187px;
+  margin-bottom: 10px;
+}
+.trends__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 158px;
+}
+.trends__h {
+  margin-bottom: 30px;
+  color: var(--green);
+  font: 600 2.25rem/1.1 "SF Rounded", sans-serif;
+  text-align: center;
+}
+.trends__btn {
+  width: 89.78%;
+}
+.trends__swiper {
+  margin: auto;
+  max-width: 300px;
+}
+
+.swiper-trends__slide {
+  margin-bottom: 50px;
 }
