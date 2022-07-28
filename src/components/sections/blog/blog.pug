@@ -1,7 +1,7 @@
 section(class="blog")
     div(class="container blog__container")
         div(class="layout blog__layout")
-            h2(class="h h--2 blog__h") BLOG
+            h2(class="h blog__h") BLOG
             ul(class="list-reset blog__list list-blog")
                 each item in blogList
                     li(class="list-blog__item")
@@ -19,5 +19,6 @@ section(class="blog")
                                                 assets/img/blog/${item.imgName}@1x.jpg 1x`
                                     )
                                     img(class="body-list-blog__img" src=`assets/img/blog/${item.imgName}@1x.jpg` alt=item.imgAlt style="max-width: 100%")
-                            h3(class="h h--3 body-list-blog__h")= item.title
-                            a(class="a p body-list-blog__p" href=item.href)= item.desc
+                            div(class="body-list-blog__inner")
+                                h3(class="h body-list-blog__h")= item.title
+                                a(class="a p body-list-blog__p" href=item.href)= item.desc

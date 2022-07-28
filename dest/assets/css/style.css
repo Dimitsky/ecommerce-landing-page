@@ -55,6 +55,7 @@
   --grey-100: #F3F4F6;
   --grey-400: #9CA3AF;
   --grey-500: #6B7280;
+  --grey-600: #4B5563;
   --grey-800: #1F2937;
   --green: #5FD788;
 }
@@ -426,7 +427,7 @@ p {
 }
 .trends__layout {
   padding-top: 187px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .trends__wrap {
   display: flex;
@@ -450,4 +451,60 @@ p {
 
 .swiper-trends__slide {
   margin-bottom: 50px;
+}
+
+.blog__layout {
+  margin-bottom: 6px;
+}
+.blog__h {
+  margin-bottom: 78px;
+  color: var(--green);
+  font: 600 3.125rem/1.1 "SF Rounded";
+  text-align: center;
+}
+.blog__list {
+  margin: auto;
+  max-width: 67.5%;
+}
+
+.list-blog__item {
+  margin-bottom: 40px;
+}
+.list-blog__body {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.body-list-blog__img-wrap {
+  height: 191px;
+}
+.body-list-blog__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.body-list-blog__inner {
+  padding: 21px 13px;
+}
+.body-list-blog__h {
+  border-bottom: 1px solid var(--grey-100);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: var(--green);
+  font: 700 1rem/1.4 "SF Pro Display", sans-serif;
+}
+.body-list-blog__p {
+  color: var(--grey-600);
+  font: 500 0.75rem/1.5 "SF Pro Display", sans-serif;
+}
+.body-list-blog__p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

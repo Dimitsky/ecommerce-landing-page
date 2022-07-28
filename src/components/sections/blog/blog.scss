@@ -1,0 +1,69 @@
+.blog {
+    &__layout {
+        margin-bottom: 6px;
+    }
+    
+    &__h {
+        margin-bottom: 78px;
+        color: var(--green);
+        font: 600 3.125rem/1.1 "SF Rounded";
+        text-align: center;
+    }
+
+    &__list {
+        margin: auto;
+        max-width: 67.5%;
+    }
+}
+
+.list-blog {
+    &__item {
+        margin-bottom: 40px;
+    }
+
+    &__body {
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+        overflow: hidden;
+    }
+}
+
+.body-list-blog {
+    &__img-wrap {
+        height: 191px;
+    }
+
+    &__img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__inner {
+        padding: 21px 13px;
+    }
+
+    &__h {
+        border-bottom: 1px solid var(--grey-100);
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        color: var(--green);
+        font: 700 1rem/1.4 "SF Pro Display", sans-serif;
+    }
+
+    &__p {
+        color: var(--grey-600);
+        font: 500 0.75rem/1.5 "SF Pro Display", sans-serif;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

@@ -13,6 +13,7 @@
     --grey-100: #F3F4F6;
     --grey-400: #9CA3AF;
     --grey-500: #6B7280;
+    --grey-600: #4B5563;
     --grey-800: #1F2937;
     --green: #5FD788;
 }
@@ -60,3 +61,4 @@ p {
 @import '../sections/bestsellers/bestsellers.scss';
 @import '../sections/soaps/soaps.scss';
 @import '../sections/trends/trends.scss';
+@import '../sections/blog/blog.scss';
