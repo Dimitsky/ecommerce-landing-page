@@ -54,6 +54,7 @@
   --grey-50: #F9FAFB;
   --grey-100: #F3F4F6;
   --grey-400: #9CA3AF;
+  --grey-500: #6B7280;
   --grey-800: #1F2937;
   --green: #5FD788;
 }
@@ -86,6 +87,86 @@ p {
   padding: 0 35px;
 }
 
+.a {
+  color: var(--grey-800);
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5em;
+  display: inline-block;
+  max-width: 300px;
+  padding: 0.75em;
+  color: #fff;
+  font: 700 1rem/1 "Quicksand", sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--green);
+}
+
+.card {
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: block;
+  box-shadow: 3px 3px 10px -3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card__info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px 13px 8px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.info-card__inner {
+  display: flex;
+  align-items: flex-start;
+}
+.info-card__title, .info-card__desc {
+  max-width: 189px;
+}
+.info-card__title {
+  margin: 0 5px 0 0;
+  color: var(--grey-800);
+  font: 700 0.9375rem/1.4 "SF Pro Display", sans-serif;
+}
+.info-card__price {
+  border-radius: 1.33em;
+  margin-top: 4px;
+  padding: 0.5em 1.14em;
+  color: #fff;
+  font: 700 0.375rem/1 "SF Pro Display", sans-serif;
+  background: var(--green);
+}
+.info-card__desc {
+  color: var(--grey-500);
+  font: 400 0.6875rem/1.4 "SF Pro Display", sans-serif;
+}
+.info-card__add-cart {
+  display: none;
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  .card__info {
+    backdrop-filter: blur(50px);
+    background: none;
+  }
+}
 .header {
   min-height: 70px;
 }
@@ -278,22 +359,25 @@ p {
   width: 89.78%;
 }
 
-.a {
-  color: var(--grey-800);
-  text-decoration: none;
+.bestsellers__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 29px;
+  padding-top: 97px;
+  padding-bottom: 129px;
+  background: no-repeat center center url("../img/bestsellers/bg-1.svg");
+}
+.bestsellers__h {
+  margin-bottom: 29px;
+  color: var(--green);
+  font: 600 2.25rem/1.1 "SF Rounded", sans-serif;
+  text-align: center;
+}
+.bestsellers__btn {
+  width: 89.78%;
+  margin: auto;
 }
 
-.btn {
-  border: none;
-  border-radius: 0.5em;
-  display: inline-block;
-  max-width: 300px;
-  padding: 0.75em;
-  color: #fff;
-  font: 700 1rem/1 "Quicksand", sans-serif;
-  letter-spacing: 0.01em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: var(--green);
+.swiper-bestsellers__slide {
+  margin-bottom: 30px;
 }

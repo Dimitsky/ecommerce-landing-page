@@ -12,6 +12,7 @@
     --grey-50: #F9FAFB;
     --grey-100: #F3F4F6;
     --grey-400: #9CA3AF;
+    --grey-500: #6B7280;
     --grey-800: #1F2937;
     --green: #5FD788;
 }
@@ -44,14 +45,16 @@ p {
     padding: 0 35px
 }
 
+// ui
+
+@import '../ui/a/a.scss';
+@import '../ui/btn/btn.scss';
+@import '../ui/card/card.scss';
+
 // sections
 
 @import '../sections/header/header.scss';
 @import '../sections/hero/hero.scss';
 @import '../sections/about/about.scss';
 @import '../sections/explore/explore.scss';
-
-// ui
-
-@import '../ui/a/a.scss';
-@import '../ui/btn/btn.scss';
+@import '../sections/bestsellers/bestsellers.scss';

@@ -1,0 +1,28 @@
+.bestsellers {
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 29px;
+        padding-top: 97px;
+        padding-bottom: 129px;
+        background: no-repeat center center url('../img/bestsellers/bg-1.svg');
+    }
+
+    &__h {
+        margin-bottom: 29px;
+        color: var(--green);
+        font: 600 2.25rem/1.1 "SF Rounded", sans-serif;
+        text-align: center;
+    }
+
+    &__btn {
+        width: 89.78%;
+        margin: auto;
+    }
+}
+
+.swiper-bestsellers {
+    &__slide {
+        margin-bottom: 30px;
+    }
+}
