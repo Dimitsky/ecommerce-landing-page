@@ -1,0 +1,35 @@
+.soaps {
+    &__container {
+        padding: 0;
+    }
+
+    &__layout {
+        margin-bottom: 60px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    &__wrap {
+        &--one {
+            padding-top: 144px;
+            padding-bottom: 144px;
+            background: no-repeat center center/cover url("../img/soaps/bg-2.webp") #000;
+        }
+    }
+
+    &__h {
+        margin-bottom: 38px;
+        color: #fff;
+        font: 600 2rem/1.2 "SF Rounded", sans-serif;
+        text-align: center;
+    }
+
+    &__btn {
+        width: 61.28%;
+    }
+}

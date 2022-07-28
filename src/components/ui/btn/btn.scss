@@ -11,4 +11,9 @@
     text-decoration: none;
     text-transform: uppercase;
     background: var(--green);
+
+    &--alter {
+        color: var(--grey-800);
+        background: #fff;
+    }
 }
