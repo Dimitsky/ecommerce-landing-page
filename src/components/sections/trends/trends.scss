@@ -35,3 +35,34 @@
         margin-bottom: 50px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .trends {
+        background: no-repeat top 29px left / 311px url("../img/trends/bg-1.svg");
+
+        &__layout {
+            margin-bottom: 88px;
+            padding-top: 237px;
+        }
+
+        &__h {
+            margin-bottom: 18px;
+            font-size: 3.125rem;
+        }
+
+        &__btn {
+            max-width: 270px;
+            margin-bottom: 66px;
+        }
+
+        &__swiper {
+            max-width: 377px;
+        }
+    }
+
+    .swiper-trends {
+        &__slide {
+            margin-bottom: 80px;
+        }
+    }
+}

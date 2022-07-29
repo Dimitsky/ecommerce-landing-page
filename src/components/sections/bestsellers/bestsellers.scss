@@ -1,5 +1,5 @@
 .bestsellers {
-    background: no-repeat center center url('../img/bestsellers/bg-1.svg');
+    background: no-repeat top center url('../img/bestsellers/bg-1.svg');
 
     &__layout {
         margin-bottom: 10px;
@@ -53,6 +53,10 @@
         &__h {
             margin-bottom: 18px;
             font-size: 3.125rem;
+        }
+
+        &__btn {
+            max-width: 268px;
         }
 
         &__swiper {
