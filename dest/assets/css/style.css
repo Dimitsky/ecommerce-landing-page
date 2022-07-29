@@ -311,6 +311,32 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: no-repeat top 244px right 10px/310px url("../img/hero/bg-2.webp"), no-repeat top 35px right -300px/620px url("../img/hero/bg-1.svg");
+  }
+  .hero__layout {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 551px;
+    margin-bottom: 130px;
+    padding: 0 51px;
+  }
+  .hero__h, .hero__p {
+    max-width: 380px;
+  }
+  .hero__h {
+    margin: 0 0 38px;
+    font-size: 6em;
+    text-align: left;
+  }
+  .hero__p {
+    font-size: 0.875rem;
+    text-align: left;
+  }
+}
 .about__layout {
   margin-bottom: 52px;
 }
@@ -576,4 +602,10 @@ p {
 .list-footer__link {
   color: var(--grey-400);
   font: 500 0.75rem/1.35 "SF Pro Display", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 49px;
+  }
 }

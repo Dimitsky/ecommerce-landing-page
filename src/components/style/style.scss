@@ -63,3 +63,9 @@ p {
 @import '../sections/trends/trends.scss';
 @import '../sections/blog/blog.scss';
 @import '../sections/footer/footer.scss';
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 49px;
+    }
+}

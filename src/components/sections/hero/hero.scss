@@ -21,3 +21,36 @@
         text-align: center;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        background: no-repeat top 244px right 10px/310px url("../img/hero/bg-2.webp"), 
+                    no-repeat top 35px right -300px/620px url("../img/hero/bg-1.svg");
+
+        &__layout {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 551px;
+            margin-bottom: 130px;
+            padding: 0 51px;
+        }
+
+        &__h, 
+        &__p {
+            max-width: 380px;
+        }
+
+        &__h {
+            margin: 0 0 38px;
+            font-size: 6em;
+            text-align: left;
+        }
+
+        &__p {
+            font-size: 0.875rem;
+            text-align: left;
+        }
+    }
+}
