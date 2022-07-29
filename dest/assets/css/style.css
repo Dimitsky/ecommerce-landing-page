@@ -265,6 +265,32 @@ p {
   transform: rotate(-45deg);
 }
 
+@media screen and (min-width: 1024px) {
+  .header__layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__nav {
+    width: 60%;
+  }
+  .nav-header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-nav-header__list {
+    display: flex;
+    margin: 0;
+  }
+  .menu-nav-header__item:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
 .hero {
   background: no-repeat top 95px center/150px url("../img/hero/bg-2.webp"), no-repeat top 45px center/220px url("../img/hero/bg-1.svg");
 }

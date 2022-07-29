@@ -109,3 +109,41 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .header {
+        &__layout {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            margin: 0;
+        }
+
+        &__nav {
+            width: 60%;
+        }
+    }
+
+    .nav-header {
+        &__menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .menu-nav-header {
+        &__list {
+            display: flex;
+            margin: 0;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
