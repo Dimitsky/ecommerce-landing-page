@@ -546,6 +546,32 @@ p {
   width: 61.28%;
 }
 
+@media screen and (min-width: 1024px) {
+  .soaps__layout {
+    display: flex;
+  }
+  .soaps__wrap--one {
+    flex: 1 1 540px;
+    padding: 0 68px;
+    background: no-repeat center center/cover url("../img/soaps/bg-1.png") #000;
+  }
+  .soaps__wrap--two {
+    flex: 1 1 320px;
+    background: no-repeat center center/cover url("../img/soaps/bg-2.webp") #000;
+  }
+  .soaps__inner {
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 523px;
+    max-width: 357px;
+    margin: 0;
+  }
+  .soaps__h {
+    margin-bottom: 35px;
+    font-size: 2.375rem;
+    text-align: left;
+  }
+}
 .trends {
   background: no-repeat top center url("../img/trends/bg-1.svg");
 }
