@@ -432,6 +432,29 @@ p {
   width: 89.78%;
 }
 
+@media screen and (min-width: 1024px) {
+  .explore {
+    background: no-repeat center left 50px/375px url("../img/explore/bg-2.webp"), no-repeat center left -140px/390px url("../img/explore/bg-1.svg");
+  }
+  .explore__layout {
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 594px;
+    margin-bottom: 0;
+    padding: 0 5px 0 0;
+  }
+  .explore__h {
+    max-width: 550px;
+    font-size: 2.5rem;
+    text-align: right;
+  }
+  .explore__p {
+    max-width: 374px;
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    text-align: right;
+  }
+}
 .bestsellers__layout {
   margin-bottom: 10px;
 }
