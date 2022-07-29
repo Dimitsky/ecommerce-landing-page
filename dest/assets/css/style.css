@@ -690,6 +690,32 @@ p {
   left: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .blog__h {
+    margin-bottom: 174px;
+    font-size: 3.125rem;
+  }
+  .blog__list {
+    max-width: 40.16%;
+  }
+  .list-blog__item {
+    margin-bottom: 72px;
+  }
+  .body-list-blog__img-wrap {
+    height: 344px;
+  }
+  .body-list-blog__inner {
+    padding: 38px 23px 97px;
+  }
+  .body-list-blog__h {
+    margin-bottom: 38px;
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+  }
+  .body-list-blog__p {
+    font-size: 1rem;
+  }
+}
 .footer {
   background: var(--grey-100);
 }

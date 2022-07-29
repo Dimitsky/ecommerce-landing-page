@@ -67,3 +67,42 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .blog {
+        &__h {
+            margin-bottom: 174px;
+            font-size: 3.125rem;
+        }
+
+        &__list {
+            max-width: 40.16%;
+        }
+    }
+
+    .list-blog {
+        &__item {
+            margin-bottom: 72px;
+        }
+    }
+
+    .body-list-blog {
+        &__img-wrap {
+            height: 344px;
+        }
+
+        &__inner {
+            padding: 38px 23px 97px;
+        }
+
+        &__h {
+            margin-bottom: 38px;
+            padding-bottom: 35px;
+            font-size: 1.5rem;
+        }
+
+        &__p {
+            font-size: 1rem;
+        }
+    }
+}
