@@ -3,7 +3,7 @@
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     display: block;
-    height: 310px;
+    min-height: 310px;
     box-shadow: 3px 3px 10px -3px rgba(0 0 0 /20%);
     overflow: hidden;
 
@@ -70,5 +70,11 @@
             backdrop-filter: blur(50px);
             background: none;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        min-height: 390px;
     }
 }

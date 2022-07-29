@@ -46,6 +46,12 @@ p {
     padding: 0 35px
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 49px;
+    }
+}
+
 // ui
 
 @import '../ui/a/a.scss';
@@ -63,9 +69,3 @@ p {
 @import '../sections/trends/trends.scss';
 @import '../sections/blog/blog.scss';
 @import '../sections/footer/footer.scss';
-
-@media screen and (min-width: 1024px) {
-    .container {
-        padding: 0 49px;
-    }
-}
