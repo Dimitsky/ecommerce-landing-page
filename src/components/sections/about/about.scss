@@ -24,20 +24,11 @@
         align-items: center;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        padding: 30px 0 26px;
+        padding: 30px 5px 26px;
         text-decoration: none;
         background: var(--grey-50);
         box-shadow: 7px 7px 10px 1px rgb(0 0 0 / 15%);
         transition: background-color 300ms;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
 
         &:hover {
             background-color: var(--green);
@@ -61,6 +52,7 @@
     &__h {
         color: var(--green);
         font: 600 0.875rem/1.4 "SF Pro Display", sans-serif;
+        text-align: center;
         transition: color 300ms;
     }
 }

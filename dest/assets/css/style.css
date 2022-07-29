@@ -135,7 +135,7 @@ p {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 10px 13px 8px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   overflow: hidden;
 }
 
@@ -167,8 +167,9 @@ p {
   display: none;
 }
 
-@supports (backdrop-filter: blur(10px)) {
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
   .card__info {
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     background: none;
   }
@@ -304,19 +305,11 @@ p {
   align-items: center;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 30px 0 26px;
+  padding: 30px 5px 26px;
   text-decoration: none;
   background: var(--grey-50);
   box-shadow: 7px 7px 10px 1px rgba(0, 0, 0, 0.15);
   transition: background-color 300ms;
-}
-.list-about__body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 .list-about__body:hover {
   background-color: var(--green);
@@ -335,6 +328,7 @@ p {
 .list-about__h {
   color: var(--green);
   font: 600 0.875rem/1.4 "SF Pro Display", sans-serif;
+  text-align: center;
   transition: color 300ms;
 }
 
