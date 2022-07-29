@@ -4,7 +4,8 @@
     }
     
     &__list {
-        max-width: 40%;
+        width: 40%;
+        max-width: 200px;
         margin: auto;
     }
 }
@@ -54,5 +55,34 @@
         font: 600 0.875rem/1.4 "SF Pro Display", sans-serif;
         text-align: center;
         transition: color 300ms;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        &__layout {
+            margin-bottom: 45px;
+        }
+        
+        &__list {
+            width: 29.59%;
+            max-width: 400px;
+        }
+    }
+
+    .list-about {
+        &__item:not(:last-child) {
+            margin-bottom: 46px;
+        }
+
+        &__body {
+            min-height: 274px;
+            justify-content: center;
+        }
+
+        &__icon {
+            width: 110px !important;
+            margin-bottom: 17px;
+        }
     }
 }

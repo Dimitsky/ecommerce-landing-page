@@ -341,7 +341,8 @@ p {
   margin-bottom: 52px;
 }
 .about__list {
-  max-width: 40%;
+  width: 40%;
+  max-width: 200px;
   margin: auto;
 }
 
@@ -384,6 +385,26 @@ p {
   transition: color 300ms;
 }
 
+@media screen and (min-width: 1024px) {
+  .about__layout {
+    margin-bottom: 45px;
+  }
+  .about__list {
+    width: 29.59%;
+    max-width: 400px;
+  }
+  .list-about__item:not(:last-child) {
+    margin-bottom: 46px;
+  }
+  .list-about__body {
+    min-height: 274px;
+    justify-content: center;
+  }
+  .list-about__icon {
+    width: 110px !important;
+    margin-bottom: 17px;
+  }
+}
 .explore {
   background: no-repeat top 30px right 43%/185px url("../img/explore/bg-2.webp"), no-repeat top 25px right 50%/190px url("../img/explore/bg-1.svg");
 }
