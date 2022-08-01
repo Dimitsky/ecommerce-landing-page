@@ -594,7 +594,7 @@ p {
     margin-bottom: 0;
   }
   .bestsellers__swiper {
-    flex: 1 1 274px;
+    flex: 0 1 767px;
     max-width: unset;
     margin: 0;
   }
@@ -649,10 +649,9 @@ p {
   .soaps__inner {
     align-items: flex-start;
     justify-content: center;
-    min-height: 523px;
     max-width: 357px;
     margin: 0;
-    padding: 0;
+    padding: 110px 0;
   }
   .soaps__h {
     margin-bottom: 35px;
@@ -661,6 +660,23 @@ p {
   }
   .soaps__btn {
     width: 52.39%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .soaps__layout {
+    margin-bottom: 90px;
+  }
+  .soaps__h {
+    font-size: 3.125rem;
+  }
+  .soaps__wrap--one {
+    flex: 0 1 792px;
+  }
+  .soaps__wrap--two {
+    flex: 1 1;
+  }
+  .soaps__inner {
+    max-width: 523px;
   }
 }
 .trends {

@@ -53,13 +53,13 @@
                 background: no-repeat center center/cover url("../img/soaps/bg-2.webp") #000;
             }
         }
+
         &__inner {
             align-items: flex-start;
             justify-content: center;
-            min-height: 523px;
             max-width: 357px;
             margin: 0;
-            padding: 0;
+            padding: 110px 0;
         }
 
         &__h {
@@ -72,4 +72,31 @@
             width: 52.39%;
         }
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .soaps {
+        &__layout {
+            margin-bottom: 90px;
+        }
+        
+        &__h {
+            font-size: 3.125rem;
+        }
+
+        &__wrap {
+            &--one {
+                flex: 0 1 792px;
+            }
+
+            &--two {
+                flex: 1 1;
+            }
+        }
+
+        &__inner {
+            max-width: 523px;
+        }
+    }
+
 }
