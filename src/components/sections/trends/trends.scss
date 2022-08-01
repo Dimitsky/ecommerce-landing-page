@@ -1,5 +1,5 @@
 .trends {
-    background: no-repeat top center url('../img/trends/bg-1.svg');
+    background: no-repeat top center url('../img/trends/bg-1.png');
 
     &__layout {
         padding-top: 187px;
@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 1024px) {
     .trends {
-        background: no-repeat top 29px left / 311px url("../img/trends/bg-1.svg");
+        background: no-repeat top 29px left / 311px url("../img/trends/bg-1.png");
 
         &__layout {
             margin-bottom: 88px;
@@ -63,6 +63,37 @@
     .swiper-trends {
         &__slide {
             margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .trends {
+        background: no-repeat center left url("../img/trends/bg-1.png");
+
+        &__layout {
+            display: flex;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 60px;
+        }
+
+        &__wrap {
+            flex: 1 1;
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+
+        &__swiper {
+            flex: 0 1 769px;
+            max-width: unset;
+            margin: unset;
+        }
+    }
+
+    .swiper-trends {
+        &__slide {
+            margin-bottom: 0;
         }
     }
 }
