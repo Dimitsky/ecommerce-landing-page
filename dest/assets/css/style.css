@@ -504,6 +504,23 @@ p {
     text-align: right;
   }
 }
+@media screen and (min-width: 1440px) {
+  .explore {
+    background: no-repeat center left 65px url("../img/explore/bg-2.webp"), no-repeat center left url("../img/explore/bg-1@desktop.svg");
+  }
+  .explore__layout {
+    margin-bottom: 105px;
+    padding-top: 264px;
+    padding-bottom: 138px;
+  }
+  .explore__h {
+    margin-bottom: 42px;
+    font-size: 3.125rem;
+  }
+  .explore__p {
+    margin-bottom: 24px;
+  }
+}
 .bestsellers {
   background: no-repeat top center url("../img/bestsellers/bg-1.svg");
 }
