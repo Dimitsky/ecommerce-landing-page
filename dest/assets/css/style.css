@@ -578,6 +578,33 @@ p {
     margin-bottom: 80px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .bestsellers {
+    background-position-y: center;
+  }
+  .bestsellers__layout {
+    display: flex;
+    padding-top: 0;
+  }
+  .bestsellers__h {
+    text-align: left;
+  }
+  .bestsellers__wrap {
+    flex: 1 1;
+    margin-bottom: 0;
+  }
+  .bestsellers__swiper {
+    flex: 1 1 274px;
+    max-width: unset;
+    margin: 0;
+  }
+  .bestsellers__btn {
+    margin: 0;
+  }
+  .swiper-bestsellers__slide {
+    margin-bottom: 0;
+  }
+}
 .soaps__container {
   padding: 0;
 }

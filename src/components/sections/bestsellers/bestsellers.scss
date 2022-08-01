@@ -70,3 +70,39 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .bestsellers {
+        background-position-y: center;
+        
+        &__layout {
+            display: flex;
+            padding-top: 0;
+        }
+
+        &__h {
+            text-align: left;
+        }
+
+        &__wrap {
+            flex: 1 1;
+            margin-bottom: 0;
+        }
+        
+        &__swiper {
+            flex: 1 1 274px;
+            max-width: unset;
+            margin: 0;
+        }
+        
+        &__btn {
+            margin: 0;
+        }
+    }
+
+    .swiper-bestsellers {
+        &__slide {
+            margin-bottom: 0;
+        }
+    }
+}
