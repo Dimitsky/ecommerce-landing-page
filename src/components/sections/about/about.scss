@@ -86,3 +86,33 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .about {
+        &__list {
+            display: flex;
+            width: unset;
+            max-width: unset;
+            margin: 0;
+            padding: 0 123px;
+        }
+    }
+
+    .list-about {
+        &__item {
+            flex: 1 1;
+        }
+
+        $cards: 4;
+        @for $i from 1 through $cards {
+            &__item:nth-child(#{$i}) {
+                position: relative;
+                z-index: $cards - $i;
+                @if ($i > 1) {
+                    transform: translateX(-7px * $i - 1);
+                } 
+            }
+        }
+
+    }
+}
