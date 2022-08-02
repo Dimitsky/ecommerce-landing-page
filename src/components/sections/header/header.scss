@@ -3,18 +3,57 @@
 
     &__layout {
         padding: 25px 0;
+
+        .js & {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 18px;
+        }
     }
 
     &__logo {
         display: inline-flex;
         align-items: center;
         margin-bottom: 1.5em;
+        color: var(--grey-800);
+        font-size: 0.75rem;
+
+        .js & {
+            margin-bottom: 0;
+        }
     }
 }
 
 .logo-header {
     &__icon {
         margin-right: 1em;
+    }
+}
+
+.nav-header {
+    &__menu {
+        .js & {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9990;
+            height: 100%;
+            width: 100%;
+            max-width: 768px;
+            padding: 5em 1.5em 1.5em;
+            background: rgba(0 0 0 / .9);
+            transform: translateX(-100%);
+            transition: transform 300ms, visibility 300ms 0ms;
+            visibility: hidden;
+            will-change: transform;
+
+            &.open {
+                transform: translateX(0);
+                visibility: visible;
+                transition: transform 300ms, visibility 0ms 0ms;
+            }
+        }
     }
 }
 
@@ -25,6 +64,17 @@
 
     &__item:not(:last-child) {
         margin-bottom: .7em;
+
+        .js & {
+            margin-bottom: 1.7em;
+        }
+    }
+
+    &__link {
+        .js & {
+            display: block;
+            color: #fff;
+        }
     }
 
     &__icon-wrap {
@@ -35,6 +85,10 @@
         display: inline-block;
         min-height: 20px;
         margin-right: 12px;
+
+        .js & {
+            fill: #fff;
+        }
     }
 
     &__search {
@@ -48,6 +102,10 @@
         background: no-repeat center right 0.6em/1.6em url("../img/search.svg") transparent;
         transition: background-color 500ms, max-width 500ms, background-size 500ms;
         overflow: hidden;
+
+        .js & {
+            background-image: url("../img/search@white.svg");
+        }
         
         &:focus {
             height: 1.6em;
@@ -60,23 +118,29 @@
 
 .hamburger {
     position: relative;
+    z-index: 99999;
     display: none;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 0;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 40px;
     padding: 0;
     background: none;
+
+    .js & {
+        display: flex;
+    }
 
     &__item, 
     &__item::after, 
     &__item::before {
         border-radius: 2px;
+        display: block;
         height: 2px;
         width: 26px;
-        background: #000;
+        background: var(--grey-800);
     }
 
     &__item {
@@ -91,20 +155,24 @@
             content: '';
             position: absolute;
             left: 0;
+            transition: background-color 300ms, transform 300ms;
         }
 
         &::after {
-            transform: translateY(10px);
+            transform: translateY(7px);
 
             [aria-expanded=true] & {
-                transform: rotate(45deg);
+                background: #fff;
+                transform: translateY(0) rotate(45deg);
             }
         }
 
         &::before {
-            transform: translateY(-10px);
+            transform: translateY(-7px);
+
             [aria-expanded=true] & {
-                transform: rotate(-45deg);
+                background: #fff;
+                transform: translateY(0) rotate(-45deg);
             }
         }
     }
@@ -132,6 +200,17 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            .js & {
+                position: static;
+                height: unset;
+                width: unset;
+                max-width: unset;
+                padding: 0;
+                background: none;
+                visibility: visible;
+                transform: none;
+            }
         }
     }
 
@@ -144,11 +223,26 @@
         &__item:not(:last-child) {
             margin-right: 10px;
             margin-bottom: 0;
+
+            .js & {
+                margin-bottom: 0;
+            }
         }
 
         &__link {
             font-size: 0.75rem;
             line-height: 1.35;
+
+            .js & {
+                display: inline;
+                color: var(--grey-800);
+            }
+        }
+    }
+
+    .hamburger {
+        .js & {
+            display: none;
         }
     }
 }
