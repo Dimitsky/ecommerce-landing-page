@@ -106,3 +106,45 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .blog {
+        &__layout {
+            margin-bottom: 71px;
+        }
+
+        &__h {
+            margin-bottom: 30px;
+        }
+
+        &__list {
+            display: flex;
+            max-width: unset;
+            margin: 0 -12px;
+            padding: 0 91px;
+        }
+    }
+
+    .list-blog {
+        &__item {
+            margin-bottom: 0;
+            padding: 0 12px;
+        }
+    }
+
+    .body-list-blog {
+        &__img-wrap {
+            height: 201px;
+        }
+
+        &__inner {
+            padding: 22px 23px 22px;
+        }
+
+        &__h {
+            margin-bottom: 23px;
+            padding-bottom: 12px;
+            font-size: 1.25rem;
+        }
+    }
+}

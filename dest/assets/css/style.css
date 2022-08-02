@@ -848,6 +848,35 @@ p {
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .blog__layout {
+    margin-bottom: 71px;
+  }
+  .blog__h {
+    margin-bottom: 30px;
+  }
+  .blog__list {
+    display: flex;
+    max-width: unset;
+    margin: 0 -12px;
+    padding: 0 91px;
+  }
+  .list-blog__item {
+    margin-bottom: 0;
+    padding: 0 12px;
+  }
+  .body-list-blog__img-wrap {
+    height: 201px;
+  }
+  .body-list-blog__inner {
+    padding: 22px 23px 22px;
+  }
+  .body-list-blog__h {
+    margin-bottom: 23px;
+    padding-bottom: 12px;
+    font-size: 1.25rem;
+  }
+}
 .footer {
   background: var(--grey-100);
 }
