@@ -85,3 +85,29 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        &__layout {
+            padding-top: 33px;
+            padding-bottom: 31px;
+        }
+
+        &__wrap {
+            display: flex;
+            margin-bottom: 47px;
+        }
+
+        &__inner {
+            margin-bottom: 0;
+        }
+
+        &__inner:not(:last-child) {
+            margin-right: 56px;
+        }
+
+        &__copy {
+            padding-top: 0;
+        }
+    }
+}

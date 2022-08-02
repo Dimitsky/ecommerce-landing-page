@@ -947,3 +947,22 @@ p {
     padding-top: 24px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .footer__layout {
+    padding-top: 33px;
+    padding-bottom: 31px;
+  }
+  .footer__wrap {
+    display: flex;
+    margin-bottom: 47px;
+  }
+  .footer__inner {
+    margin-bottom: 0;
+  }
+  .footer__inner:not(:last-child) {
+    margin-right: 56px;
+  }
+  .footer__copy {
+    padding-top: 0;
+  }
+}
