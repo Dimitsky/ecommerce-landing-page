@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: center;
         padding-top: 27px;
-        padding-bottom: 39px;
+        padding-bottom: 31px;
     }
 
     &__logo {
@@ -17,19 +17,19 @@
     }
 
     &__wrap {
-        max-width: 50%;
+        max-width: 63%;
         margin-bottom: 22px;
     }
 
     &__inner {
-        margin-bottom: 33px;
+        margin-bottom: 34px;
         text-align: center;
     }
 
     &__h {
-        margin-bottom: 4px;
+        margin-bottom: 5px;
         color: var(--green);
-        font: 600 0.75rem/1.35 "SF Pro Display", sans-serif;
+        font: 600 0.75rem/1 "SF Pro Display", sans-serif;
     }
 
     &__copy {
@@ -52,13 +52,18 @@
 }
 
 .list-footer {
+    &__item:not(:last-child) {
+        margin-bottom: 2px;
+    }
+
     &__link {
+        display: block;
         color: var(--grey-400);
-        font: 500 0.75rem/1.35 "SF Pro Display", sans-serif;
+        font: 500 0.75rem/1 "SF Pro Display", sans-serif;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 834px) {
     .footer {
         &__container {
             padding: 0 87px;
@@ -66,22 +71,33 @@
 
         &__layout {
             position: relative;
-            padding-top: 34px;
+            padding-top: 37px;
             padding-bottom: 21px;
         }
 
+        &__wrap {
+            margin-bottom: 4px;
+        }
+
         &__inner {
-            margin-bottom: 36px;
+            margin-bottom: 40px;
         }
 
         &__logo {
             position: absolute;
+            top: 30px;
             left: 0;
             margin: 0;
         }
 
         &__copy {
             padding-top: 24px;
+        }
+    }
+
+    .list-footer {
+        &__item:not(:last-child) {
+            margin-bottom: 3px;
         }
     }
 }

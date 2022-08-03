@@ -16,25 +16,26 @@
 
     &__wrap {
         &--one {
-            padding-top: 144px;
-            padding-bottom: 144px;
+            padding-top: 139px;
+            padding-bottom: 140px;
             background: no-repeat center center/cover url("../img/soaps/bg-2.webp") #000;
         }
     }
 
     &__h {
-        margin-bottom: 38px;
+        margin-bottom: 42px;
         color: #fff;
         font: 600 2rem/1.2 "SF Rounded", sans-serif;
+        letter-spacing: 0.01em;
         text-align: center;
     }
 
     &__btn {
-        width: 61.28%;
+        width: 55.7%;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 834px) {
     .soaps {
         &__layout {
             display: flex;
@@ -43,8 +44,8 @@
 
         &__wrap {
             &--one {
-                flex: 1 1 540px;
-                padding: 0 68px;
+                flex: 1 1 550px;
+                padding: 0 56px;
                 background: no-repeat center center/cover url("../img/soaps/bg-1.png") var(--green);
             }
 
@@ -59,11 +60,11 @@
             justify-content: center;
             max-width: 357px;
             margin: 0;
-            padding: 110px 0;
+            padding: 113px 0 98px;
         }
 
         &__h {
-            margin-bottom: 35px;
+            margin-bottom: 36px;
             font-size: 2.375rem;
             text-align: left;
         }
@@ -74,7 +75,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .soaps {
         &__layout {
             margin-bottom: 90px;

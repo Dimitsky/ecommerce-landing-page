@@ -2,13 +2,12 @@
     min-height: 70px;
 
     &__layout {
-        padding: 25px 0;
+        padding: 20px 18px;
 
         .js & {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 18px;
         }
     }
 
@@ -178,12 +177,13 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 834px) {
     .header {
         &__layout {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 27px 14px;
         }
 
         &__logo {
@@ -191,7 +191,7 @@
         }
 
         &__nav {
-            width: 60%;
+            width: 65%;
         }
     }
 
@@ -221,7 +221,7 @@
         }
 
         &__item:not(:last-child) {
-            margin-right: 10px;
+            margin-right: 14px;
             margin-bottom: 0;
 
             .js & {
@@ -236,6 +236,18 @@
             .js & {
                 display: inline;
                 color: var(--grey-800);
+            }
+        }
+
+        &__bag {
+            .header & {
+                fill: #000;
+            }
+        }
+
+        &__search {
+            .header & {
+                background-image: url("../img/search.svg");
             }
         }
     }

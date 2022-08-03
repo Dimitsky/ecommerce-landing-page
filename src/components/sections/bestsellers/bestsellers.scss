@@ -2,7 +2,7 @@
     background: no-repeat top center url('../img/bestsellers/bg-1.svg');
 
     &__layout {
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         padding-top: 97px;
     }
     
@@ -13,7 +13,7 @@
     }
 
     &__h {
-        margin-bottom: 29px;
+        margin-bottom: 22px;
         color: var(--green);
         font: 600 2.25rem/1.1 "SF Rounded", sans-serif;
         text-align: center;
@@ -34,15 +34,19 @@
     &__slide {
         margin-bottom: 50px;
     }
+
+    &__wrapper {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 834px) {
     .bestsellers {
-        background: no-repeat top left -80px/430px url("../img/bestsellers/bg-1.svg");
+        background: no-repeat top left -102px/430px url("../img/bestsellers/bg-1.svg");
 
         &__layout {
             margin-bottom: 22px;
-            padding-top: 166px;
+            padding-top: 174px;
         }
 
         &__wrap {
@@ -51,8 +55,9 @@
         }
 
         &__h {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             font-size: 3.125rem;
+            letter-spacing: 0.01em;
         }
 
         &__btn {

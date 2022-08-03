@@ -1,10 +1,10 @@
 .blog {
     &__layout {
-        margin-bottom: 6px;
+        margin-bottom: 48px;
     }
     
     &__h {
-        margin-bottom: 78px;
+        margin-bottom: 69px;
         color: var(--green);
         font: 600 3.125rem/1.1 "SF Rounded";
         text-align: center;
@@ -42,18 +42,19 @@
     }
 
     &__inner {
-        padding: 21px 13px;
+        padding: 22px 13px;
     }
 
     &__h {
         border-bottom: 1px solid var(--grey-100);
-        margin-bottom: 10px;
-        padding-bottom: 10px;
+        margin-bottom: 6px;
+        padding-bottom: 6px;
         color: var(--green);
         font: 700 1rem/1.4 "SF Pro Display", sans-serif;
     }
 
     &__p {
+        display: inline-block;
         color: var(--grey-600);
         font: 500 0.75rem/1.5 "SF Pro Display", sans-serif;
         
@@ -68,15 +69,19 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 834px) {
     .blog {
+        &__layout {
+            margin-bottom: -4px;
+        }
+        
         &__h {
-            margin-bottom: 174px;
+            margin-bottom: 170px;
             font-size: 3.125rem;
         }
 
         &__list {
-            max-width: 40.16%;
+            max-width: 48.67%;
         }
     }
 
@@ -92,12 +97,12 @@
         }
 
         &__inner {
-            padding: 38px 23px 97px;
+            padding: 38px 23px 90px;
         }
 
         &__h {
             margin-bottom: 38px;
-            padding-bottom: 35px;
+            padding-bottom: 42px;
             font-size: 1.5rem;
         }
 

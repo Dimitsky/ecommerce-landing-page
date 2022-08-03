@@ -1,5 +1,5 @@
 .trends {
-    background: no-repeat top center url('../img/trends/bg-1.png');
+    background: no-repeat top center url('../img/trends/bg-1.webp');
 
     &__layout {
         padding-top: 187px;
@@ -34,19 +34,39 @@
     &__slide {
         margin-bottom: 50px;
     }
+
+    &__wrapper {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+.slide-swiper-trends {
+    &__body {
+        height: 314px;
+    }
+}
+
+.desc-slide-swiper-trends {
+    &__inner {
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 834px) {
     .trends {
-        background: no-repeat top 29px left / 311px url("../img/trends/bg-1.png");
+        background: no-repeat top 36px left url("../img/trends/bg-1@tablet.webp");
 
         &__layout {
             margin-bottom: 88px;
-            padding-top: 237px;
+            padding-top: 244px;
+        }
+
+        &__wrap {
+            margin-bottom: 0;
         }
 
         &__h {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             font-size: 3.125rem;
         }
 
@@ -65,11 +85,18 @@
             margin-bottom: 80px;
         }
     }
+
+    .slide-swiper-trends {
+        &__body {
+            height: 390px;
+        }
+    }
+    
 }
 
 @media screen and (min-width: 1440px) {
     .trends {
-        background: no-repeat center left url("../img/trends/bg-1.png");
+        background: no-repeat center left url("../img/trends/bg-1.webp");
 
         &__layout {
             display: flex;
