@@ -1,5 +1,5 @@
 .footer {
-    background: var(--grey-100);
+    background: var(--color-footer);
 
     &__layout {
         display: flex;
@@ -13,6 +13,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 52px;
+        color: var(--color-logo-footer);
         text-decoration: none;
     }
 
@@ -46,7 +47,6 @@
     }
 
     &__title {
-        color: var(--grey-800);
         font: 600 0.75rem/1.35 "SF Pro Display", sans-serif;
     }
 }
@@ -105,13 +105,14 @@
 @media screen and (min-width: 1440px) {
     .footer {
         &__layout {
-            padding-top: 33px;
+            padding-top: 35px;
             padding-bottom: 31px;
         }
 
         &__wrap {
             display: flex;
-            margin-bottom: 47px;
+            margin-bottom: 55px;
+            margin-left: 108px;
         }
 
         &__inner {
@@ -120,6 +121,15 @@
 
         &__inner:not(:last-child) {
             margin-right: 56px;
+        }
+
+        &__logo {
+            top: 22px;
+            left: 15px;
+        }
+
+        &__h {
+            margin-bottom: 7px;
         }
 
         &__copy {

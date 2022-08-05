@@ -55,8 +55,9 @@
     .hero {
         background: no-repeat center right url("../img/hero/bg-2.webp"), 
                     no-repeat center right url("../img/hero/bg-1@desktop.svg");
+
         &__layout {
-            padding-bottom: 270px;
+            padding: 268px 51px 270px;
         }
     }
 }

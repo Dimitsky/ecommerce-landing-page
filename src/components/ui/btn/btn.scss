@@ -4,7 +4,7 @@
     display: inline-block;
     max-width: 300px;
     padding: 0.75em;
-    color: #fff;
+    color: var(--color-btn-text);
     font: 700 1rem/1 "Quicksand", sans-serif;
     letter-spacing: 0.01em;
     text-align: center;
@@ -13,7 +13,7 @@
     background: var(--green);
 
     &--alter {
-        color: var(--grey-800);
-        background: #fff;
+        color: var(--color-btn-text-alter);
+        background: var(--color-btn-bg-alter);
     }
 }

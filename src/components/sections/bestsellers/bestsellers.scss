@@ -82,7 +82,8 @@
         
         &__layout {
             display: flex;
-            padding-top: 0;
+            margin-bottom: 111px;
+            padding: 0 10px 0 47px;
         }
 
         &__h {
@@ -92,6 +93,10 @@
         &__wrap {
             flex: 1 1;
             margin-bottom: 0;
+
+            .js & {
+                justify-content: center;
+            }
         }
         
         &__swiper {
@@ -106,8 +111,47 @@
     }
 
     .swiper-bestsellers {
+        &__wrapper {
+            .js & {
+                display: flex;
+                height: unset;
+                margin-bottom: 61px;
+            }
+        }
+
         &__slide {
+            height: unset;
+            width: unset;
             margin-bottom: 0;
+
+            .js & {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__pagination {
+            .js & {
+                position: static;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .pagination-swiper-bestsellers {
+        &__bullet {
+            position: static;
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            margin: 0 2.5px;
+            background: var(--color-bullet);
+        }
+        
+        &--active {
+            background: var(--green);
         }
     }
 }

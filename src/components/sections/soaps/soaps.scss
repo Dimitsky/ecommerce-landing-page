@@ -82,12 +82,14 @@
         }
         
         &__h {
+            margin-bottom: 24px;
             font-size: 3.125rem;
         }
 
         &__wrap {
             &--one {
                 flex: 0 1 792px;
+                padding: 0 98px;
             }
 
             &--two {

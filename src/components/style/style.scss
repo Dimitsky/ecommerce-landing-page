@@ -9,8 +9,25 @@
     font: 400 16px/1.5 'SF Pro Display', sans-serif;
 
     --color-text-main: #1F2937;
+    --color-section: #fff;
+    --color-link: #1F2937;
+    --color-header-icon: #000;
+    --color-about-card: #F9FAFB;
+    --color-about-icon: #424B25;
+    --color-bullet: #9CA3AF;
+    --color-btn-text: #fff;
+    --color-btn-text-alter: #1F2937;
+    --color-btn-bg-alter: #fff;
+    --color-blog-card: #fff;
+    --color-blog-p: #4B5563;
+    --color-logo: #1F2937;
+    --color-blog-border: #F3F4F6;
+    --color-logo-footer: #1F2937;
+    --color-footer: #F3F4F6;
+    --color-hamburger: #1F2937;
     --grey-50: #F9FAFB;
     --grey-100: #F3F4F6;
+    --grey-200: #9CA3AF;
     --grey-400: #9CA3AF;
     --grey-500: #6B7280;
     --grey-600: #4B5563;
@@ -22,6 +39,10 @@
 ::after, 
 ::before {
     box-sizing: inherit;
+}
+
+.body {
+    background: var(--color-section);
 }
 
 .list-reset {
@@ -69,3 +90,42 @@ p {
 @import '../sections/trends/trends.scss';
 @import '../sections/blog/blog.scss';
 @import '../sections/footer/footer.scss';
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-section: #1F2937;
+        --color-footer: #374151;
+        --color-header-icon: #fff;
+        --color-about-card: #374151;
+        --color-about-icon: #fff;
+        --color-bullet: #374151;
+        --color-btn-text: #1F2937;
+        --color-btn-text-alter: #F3F4F6;
+        --color-btn-bg-alter: #1F2937;
+        --color-blog-card: #374151;
+        --color-blog-p: #F3F4F6;
+        --color-logo: #fff;
+        --color-blog-border: #4B5563;
+        --color-logo-footer: #9CA3AF;
+        --color-hamburger: #fff;
+    }
+
+    .menu-nav-header {
+        &__link {
+            .header & {
+                color: #fff;
+            }
+        }
+        &__bag {
+            .header & {
+                fill: #fff;
+            }
+        }
+
+        &__search {
+            .header & {
+                background-image: url("../img/search@white.svg");
+            }
+        }
+    }
+}

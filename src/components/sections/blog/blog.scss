@@ -43,10 +43,11 @@
 
     &__inner {
         padding: 22px 13px;
+        background: var(--color-blog-card);
     }
 
     &__h {
-        border-bottom: 1px solid var(--grey-100);
+        border-bottom: 1px solid var(--color-blog-border);
         margin-bottom: 6px;
         padding-bottom: 6px;
         color: var(--green);
@@ -56,6 +57,7 @@
     &__p {
         display: inline-block;
         color: var(--grey-600);
+        color: var(--color-blog-p);
         font: 500 0.75rem/1.5 "SF Pro Display", sans-serif;
         
         &::after {
@@ -119,7 +121,7 @@
         }
 
         &__h {
-            margin-bottom: 30px;
+            margin-bottom: 27px;
         }
 
         &__list {
@@ -139,16 +141,16 @@
 
     .body-list-blog {
         &__img-wrap {
-            height: 201px;
+            height: 204px;
         }
 
         &__inner {
-            padding: 22px 23px 22px;
+            padding: 22px 23px 34px;
         }
 
         &__h {
             margin-bottom: 23px;
-            padding-bottom: 12px;
+            padding-bottom: 8px;
             font-size: 1.25rem;
         }
     }
