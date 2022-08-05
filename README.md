@@ -11,6 +11,9 @@
 ## Методология БЭМ
 Все классы написаны по БЭМ
 
+## Dark Mode
+Темна тема работает с помощью медиа запроса prefers-color-scheme (в зависимости от темы ОС клиента)
+
 ## Валидация HTML, CSS, БЭМ
 Файлы проверил [валидатором html](https://validator.w3.org/), [валидатором css](https://jigsaw.w3.org/css-validator/), и [валидатором БЭМ](https://yoksel.github.io/html-tree/)
 
