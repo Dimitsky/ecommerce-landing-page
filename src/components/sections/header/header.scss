@@ -44,6 +44,7 @@
             transform: translateX(-100%);
             transition: transform 300ms, visibility 300ms 0ms;
             visibility: hidden;
+            overflow: auto;
             will-change: transform;
 
             &.open {
@@ -272,6 +273,20 @@
 
         &__nav {
             width: 58%;
+        }
+    }
+
+    .menu-nav-header {
+        &__bag {
+            &:hover {
+                fill: pink !important;
+            }
+        }
+    }
+
+    .bag-menu-nav-header {
+        &__icon {
+            transition: fill 300ms;
         }
     }
 }

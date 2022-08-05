@@ -2,15 +2,18 @@ document.documentElement.classList.add('js');
 
 const menuEl = document.querySelector('#main-menu');
 const triggerEl = document.querySelector('#trigger-menu')
+const body = document.querySelector('.body');
 
 function openMenu() {
     triggerEl.setAttribute('aria-expanded', 'true');
     menuEl.classList.add('open');
+    body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
     triggerEl.setAttribute('aria-expanded', 'false');
     menuEl.classList.remove('open');
+    body.style.overflow = '';
 }
 
 function triggerHandle(event) {

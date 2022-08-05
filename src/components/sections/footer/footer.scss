@@ -126,6 +126,10 @@
         &__logo {
             top: 22px;
             left: 15px;
+
+            &:hover {
+                color: pink;
+            }
         }
 
         &__h {
@@ -134,6 +138,12 @@
 
         &__copy {
             padding-top: 0;
+        }
+    }
+
+    .logo-footer {
+        &__title {
+            transition: color 300ms;
         }
     }
 }

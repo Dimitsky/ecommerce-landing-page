@@ -107,6 +107,24 @@
 
 @media screen and (min-width: 1440px) {
     .card {
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background-color 300ms;
+        }
+
+        &:hover::after {
+            background: rgba(0 0 0 / .2);
+        }
+
         &__info {
             display: flex;
             justify-content: space-between;

@@ -1,4 +1,13 @@
 .a {
     color: var(--color-link);
     text-decoration: none;
+    transition: color 300ms;
+}
+
+@media screen and (min-width: 1440px) {
+    .a {
+        &:hover {
+            color: pink !important;
+        }
+    }
 }

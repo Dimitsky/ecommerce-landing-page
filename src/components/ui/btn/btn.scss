@@ -11,6 +11,11 @@
     text-decoration: none;
     text-transform: uppercase;
     background: var(--green);
+    transition: background-color 300ms;
+
+    &:hover {
+        background-color: pink;
+    }
 
     &--alter {
         color: var(--color-btn-text-alter);
