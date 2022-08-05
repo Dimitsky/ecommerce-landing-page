@@ -1,7 +1,7 @@
 document.documentElement.classList.add('js');
 
 const menuEl = document.querySelector('#main-menu');
-const triggerEl = document.querySelector('#trigger-menu')
+const triggerEl = document.querySelector('#trigger-menu');
 const body = document.querySelector('.body');
 
 function openMenu() {
@@ -68,9 +68,13 @@ let trendsSwiper = null;
 
 // matchmedia
 
-const mq = window.matchMedia('(min-width: 1440px)');
+const mqTablet = window.matchMedia('(min-width: 834px)');
+const mqDesktop = window.matchMedia('(min-width: 1440px)');
 
-mq.addEventListener('change', event => {
+mqTablet.addEventListener('change', event => {
+    closeMenu();
+});
+mqDesktop.addEventListener('change', event => {
     if (event.matches) {
         bestsellersSwiper = new Swiper('.swiper-bestsellers', bestsellersOpts);
         trendsSwiper = new Swiper('.swiper-trends', trendsOpts);
@@ -78,9 +82,9 @@ mq.addEventListener('change', event => {
         bestsellersSwiper.destroy(true, true);
         trendsSwiper.destroy(true, true);
     }
-})
+});
 
-if (mq.matches) {
+if (mqDesktop.matches) {
     bestsellersSwiper = new Swiper('.swiper-bestsellers', bestsellersOpts);
     trendsSwiper = new Swiper('.swiper-trends', trendsOpts);
 }
